@@ -46,6 +46,6 @@ def maxVal(colHeaders,data,colTitle):
             intVal = int (rows[index])
             if  maxVal < intVal:
                 maxVal=intVal
-    except:
+    except ValueError:
         print("Cannot Convert string to integer")
     return maxVal
